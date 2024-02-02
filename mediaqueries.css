@@ -1,0 +1,33 @@
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+
+@media only screen and (max-width: 3000px)  and (min-width:1300px) {
+    #nav-bar {
+        margin: 4%;
+    }
+
+    #boton-say-hello {
+        color:white;
+        font-size: 120%;
+        border-color:#ffbd68;
+        border-style:dashed;
+        border-radius: 30px;
+        font-family: altonebold;
+    transition: all 1s ease;
+      position: fixed;
+      right: 5%; /* Ajusta la posición desde el lado derecho en porcentaje */
+      top: 5%; /* Ajusta la posición desde la parte superior en porcentaje */
+    }
+    
+    
+    
+}

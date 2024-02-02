@@ -1,0 +1,26 @@
+
+#nav-bar {
+    margin: 2%;
+}
+
+#boton-say-hello {
+    color:white;
+    font-size: 120%;
+    border-color:#ffbd68;
+    border-style:dashed;
+    border-radius: 30px;
+    font-family: altonebold;
+transition: all 1s ease;
+  position: relative;
+}
+
+
+#boton-say-hello:hover {
+    background-color:#ffbd68;
+    color: white;
+}
+
+
+.navbar-light .navbar-toggler {
+    background-color: #ffbd68;
+}

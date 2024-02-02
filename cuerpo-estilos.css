@@ -1,0 +1,244 @@
+@font-face {
+    font-family: cocogose;
+    src: url(fuentes/Cocogoose-Pro-Bold-trial.ttf);
+}
+
+@font-face {
+    font-family: altone;
+    src: url(fuentes/AltoneTrial-Regular.ttf);
+}
+
+@font-face {
+    font-family: altonebold;
+    src: url(fuentes/AltoneTrial-Bold.ttf);
+}
+
+
+html {
+    scroll-behavior:smooth;
+}
+body {
+    background-color: #204471;
+}
+
+
+h1, h2{
+    text-align: center;
+    color:white;
+}
+
+h1{
+    font-family: altonebold;
+}
+
+h2 {
+    font-family: altone;
+    margin-top: 3%;
+    color: white;
+}
+
+
+
+h6{
+    color:rgb(44, 44, 44);
+    font-size: 200%;
+    font-family: altonebold;
+    text-align: center;
+    padding: 2%;
+    font-size: 220%;
+}
+
+
+h5 {
+    font-family: altonebold;
+    color: #204471;
+}
+
+h4 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+
+.span-titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+}
+
+span{
+    color:#fcab41;
+}
+
+p {
+    font-family: altone;
+}
+
+.numero {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+a {
+    color: #ffbd68;
+    font-size: 500%;
+    font-style: none;
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    display: inline-block;
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina relleno */
+}
+a:hover{
+color: white;
+}
+
+
+/*SECCION 1*/
+.seccion1 {
+    text-align: center; 
+    height: 5%;
+    padding: 2%;
+}
+
+
+.seccion1 {
+    text-align: center;
+    opacity: 100;
+    animation: aparecer 1s ease-out forwards; 
+}
+
+#jony-foto{
+    width: 15%;
+    height: 100%;
+    display: block; /* Asegura que la imagen se comporte como un bloque para aplicar márgenes automáticamente */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+
+/*SECCION 2 */
+.seccion2{
+    width:100%;
+    height: auto;
+    border-top:#fcab41 solid 5px;
+    margin-top: 5%;
+    padding-top: 5%;
+    background-color:#efefef;
+    text-align: center; 
+}
+
+#contenedor-seccion2 {
+    padding-bottom: 10%;
+}
+
+.descripcion {
+    text-align: center;
+    color:#204471;
+    font-family: altone;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 120%;
+    
+}
+#logo-ort , #logo-uba {
+    width: 40%;
+
+}
+#carta-estudios1 , #carta-estudios2 {
+    padding: 4%;
+
+}
+
+#carta-animada.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/*SECCION 3 */
+
+.seccion3 {
+    background-color:white;
+    color: #e6e6e6;
+    padding-top: 5%;
+    background-size:cover;
+    background-position: center;
+    padding-bottom: 7%;
+}
+
+
+#titulo1-seccion3 , #titulo2-seccion3 {
+    padding: 1%;
+    color:#494949;
+    text-shadow: 2px 5px 5px rgb(187, 187, 187);
+    opacity: 100;
+    font-family: altonebold;
+    text-align: center;   
+    font-size: 200%;
+}
+
+#icono-skill {
+    color:#204471;
+    padding-bottom: 4%;
+}
+
+#box1 , #box2 , #box3 {
+    border: #a1a1a1 solid 1px;
+    padding: 4%;
+    margin: 1%;
+}
+
+/* SECCION 4 */
+
+
+.seccion4 {
+    background-color:white;
+    padding-bottom: 2%;
+}
+
+
+
+.carta-experiencia {
+    margin: 2%;
+    text-align: justify;
+    color: #204471;
+    box-shadow:#ffbd68 1px 1px 2px;
+    background-color: white;
+    opacity: 0;
+    transform: translateY(-20px); 
+    transition: opacity 1s, transform 1s; 
+}
+
+.carta-experiencia.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#cartas-experiencias-contenedor  {
+    max-width: 100%;
+    margin: 0;
+    justify-content: center;
+    padding-left: 18.2%;
+    padding-right: 18.2%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+
+    
+}
+
+.card-title {
+    color:#fcab41;
+    font-family: altone;
+    font-style: italic;
+}
+#contienecarta {
+    max-width: 100%;
+    margin: 0;
+}
+
+.logoexperiencia1, .logoexperiencia2, .logoexperiencia3 {
+    width: 20%;
+
+}

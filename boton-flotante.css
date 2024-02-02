@@ -1,0 +1,47 @@
+.floating-button {
+    position: fixed;
+    left: 2%; 
+    bottom:30%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999;
+}
+
+.floating-button a {
+    margin-bottom: 15%; 
+    text-decoration: none;
+    color: #204471; 
+    background-color: #ffbd68; 
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.floating-button a:hover {
+    background-color: #ffbd68; 
+    color: white;
+    animation: pulse 0.5s; 
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(2.5);
+    }
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
