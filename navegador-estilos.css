@@ -1,12 +1,13 @@
 
 #nav-bar {
     margin: 2%;
+    
 }
 
 #boton-say-hello {
-    color:white;
+    color:#0e2430;
     font-size: 120%;
-    border-color:#ffbd68;
+    border-color:#0e2430;
     border-style:dashed;
     border-radius: 30px;
     font-family: altonebold;
@@ -16,8 +17,8 @@ transition: all 1s ease;
 
 
 #boton-say-hello:hover {
-    background-color:#ffbd68;
-    color: white;
+    background-color:#f5b349;
+    color: #0e2430;
 }
 
 

@@ -11,8 +11,8 @@
 .floating-button a {
     margin-bottom: 15%; 
     text-decoration: none;
-    color: #204471; 
-    background-color: #ffbd68; 
+    color: #0e2430; 
+    background-color:#f5b349; 
     padding: 10px;
     border-radius: 50%;
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .floating-button a:hover {
-    background-color: #ffbd68; 
+    background-color: #f5b349; 
     color: white;
     animation: pulse 0.5s; 
 }

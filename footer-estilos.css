@@ -9,7 +9,7 @@ footer {
 
 .pie-pagina{
     width: 100%;
-    background-color:#204471;
+    background-color:#0e2430;
     text-align: center;
 
 }
@@ -63,7 +63,8 @@ footer {
     color:#ffbd68;
 }
 .pie-pagina .grupo-2{
-    background-color:#a1a1a1;
+    background-color:#0e2430;
+    border-top: #e8d5b9 solid 1px;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
