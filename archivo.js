@@ -46,3 +46,12 @@ $(document).ready(function() {
 
 });
 
+document.getElementById('contactBtn').addEventListener('click', function() {
+    var form = document.getElementById('contactForm');
+    if (form.style.display === 'none') {
+      form.style.display = 'block';
+    } else {
+      form.style.display = 'none';
+    }
+  });
+  

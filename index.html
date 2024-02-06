@@ -25,6 +25,24 @@
                 <button class="btn btn-outline my-2 my-sm-0 ml-auto" id="boton-say-hello" type="submit">Contact me</button>
             </div>        
     </nav>      
+    <form id="contactForm" class="contact-form e2e-site-contact-form" style="display: none;">
+        <div class="form-input">
+          <label for="field1">Name *</label>
+          <input type="text" name="field1" data-validate="required,Generic" placeholder="Your Name..." required="">
+        </div>
+    
+        <div class="form-input">
+          <label for="email">Email Address *</label>
+          <input type="text" name="email" data-validate="required,Email,required" placeholder="Your Email Address..." required="">
+        </div>
+    
+        <div class="form-input">
+          <label for="field2">Message *</label>
+          <textarea name="field2" data-validate="required,Generic" placeholder="Your Message..." required=""></textarea>
+        </div>
+    
+        <div class="js-submit submit-button" data-id="m65749e5ba5bbc24e67904e7910a297c0ad3803139a75caaac64c6"><span class="js-submit-text submit-text preserve-whitespace">Submit</span></div>
+      </form>
     
     <div class="floating-button">
     <a href="https://github.com/scherman">
@@ -136,7 +154,7 @@
                 </div>
 
 
-                <h6 id="titulo2-seccion3" class="animate__animated">KNOWLEDGES</h6>
+                <h6 id="titulo2-seccion3" class="animate__animated">KNOWLEDGE</h6>
                 <br>
                 <div class="row justify-content-center mt-12" id="texto-conocimientos">
                     <div class="col-md-3 mb-4 d-flex justify-content-center" id="box1-conocimientos">
@@ -285,11 +303,12 @@
                 </div>
             </div>
             <div class="grupo-2">
-                <small>&copy; 2024 Tamara Simes - Todos los derechos reservados</small>
+                <small>&copy; 2024 Powered by Tamara Simes</small>
             </div>
 
         </footer>
         <script src="archivo.js" type="module"></script>
+        <script src="botonnavegador.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
