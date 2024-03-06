@@ -288,18 +288,46 @@ border-radius: 5px;}
     
 }
 
+.display-4 {
+    font-size: 250% !important;
+}
+
+.experiencia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+#cartaexperiencia {
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-bottom: 3%;
+    border: none;
+
+}
+
+.logoexperiencia {
+    width: 20%; 
+    height: auto;
+    border: #204471 solid 2px;
+    border-radius: 10px;
+
+}
+
+.experiencia-contenido {
+    flex: 1;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
 .card-title {
     color:#f5b349;
     font-family: altone;
     font-style: italic;
-    font-style;
 }
 #contienecarta {
     max-width: 100%;
     margin: 0;
-}
-
-.logoexperiencia1, .logoexperiencia2, .logoexperiencia3 {
-    width: 20%;
-
 }
