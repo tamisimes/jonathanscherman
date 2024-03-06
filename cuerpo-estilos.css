@@ -106,6 +106,7 @@ color: white;
     text-align: center;
     opacity: 100;
     animation: aparecer 1s ease-out forwards; 
+    border-bottom: #0e2430 solid 40px;
 }
 
 #jony-foto{
@@ -131,6 +132,9 @@ color: white;
 
 #contenedor-seccion2 {
     padding-bottom: 10%;
+    padding-right: 2%;    
+    padding-left: 2%;
+
 }
 
 .descripcion {
@@ -156,8 +160,8 @@ color: white;
 }
 
 #carta1-estudios , #carta2-estudios {
-    padding: 4%;
-    border: #e8d5b9 solid 4px;
+
+    border: #0e2430 solid 2px;
     border-radius: 13px;
 
 }
@@ -174,20 +178,21 @@ color: white;
 /*SECCION 3 */
 
 .seccion3 {
-    background-color:white;
-    color: #e6e6e6;
+    background-color:#0e2430 ;
+    color: #ffffff;
     padding-top: 5%;
     background-size:cover;
     background-position: center;
     padding-bottom: 7%;
-    border-top: #0e2430 solid 100px;
     border-bottom: #0e2430 solid 100px;
 }
-
+.text-muted {
+    color: white !important;
+}
 
 #titulo1-seccion3 , #titulo2-seccion3 {
     padding: 1%;
-    color:#0e2430;
+    color:#ffffff;
     text-shadow: 2px 5px 5px rgb(187, 187, 187);
     opacity: 100;
     font-family: altonebold;
@@ -203,15 +208,22 @@ color: white;
     padding-bottom: 4%;
 }
 
+
 #box1 , #box2 , #box3 {
-    border:#e8d5b9 solid 3px;
     padding: 2%;
     margin: 1%;
-    border-radius: 12px;
+    border:#e8d5b9 solid 3px;
+    padding-left: 15%;
+padding-right: 15%;
+
 }
 
+
+#titulo-box {
+    color: #ffffff;
+}
 strong {
-    color:#0e2430;
+    color:#f5b349;;
 }
 
 .text-muted {
