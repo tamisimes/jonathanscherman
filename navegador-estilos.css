@@ -25,3 +25,22 @@ transition: all 1s ease;
 .navbar-light .navbar-toggler {
     background-color: #ffbd68;
 }
+
+.botones-color-seccion1 {
+    background-color: #0e2430;
+}
+
+.botones-color-seccion2 {
+    background-color: #f5b349;
+    color: #0e2430;
+}
+
+.botones-color-seccion3 {
+    background-color: #f5b349;
+    color: #0e2430;
+
+}
+
+.botones-color-seccion4 {
+    background-color: #0e2430;
+}

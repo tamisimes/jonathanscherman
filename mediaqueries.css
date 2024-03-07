@@ -10,7 +10,7 @@
 
 
 
-@media only screen and (max-width: 3000px)  and (min-width:1300px) {
+@media only screen and (max-width: 3000px)  and (min-width: 1600px) {
     #nav-bar {
         margin: 4%;
     }
@@ -31,3 +31,48 @@
     
     
 }
+
+@media only screen and (max-width: 1000px)  and (min-width:300px) {
+    h1{
+        font-size: 180%;
+    }
+    h6 {
+        font-size: 150%;
+    }
+    }
+    
+@media only screen and (max-width: 650px)  and (min-width:420px) {
+#jony-foto {
+    width: 30%;
+    height: 100%;
+    margin-top: 7%;
+
+}
+}
+
+    @media only screen and (max-width: 420px)  and (min-width: 280px) {
+        h1{
+            font-size: 140%;
+            padding: 4%;
+            padding-top: 8%;
+        }
+        h2 {
+            font-size: 110%;
+        }
+        #jony-foto{
+            width: 30%;
+            height: 100%;
+            margin-top: 7%;
+        }
+        h6 {
+            font-size: 120%;
+            padding-top: 10%;
+
+        }
+        p {
+            font-size: 80%;
+        }
+    }
+
+
+
