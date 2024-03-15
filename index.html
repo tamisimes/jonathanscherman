@@ -6,6 +6,7 @@
         <title>Jonathan Scherman Portfolio</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="boton-flotante.css">
         <link rel="stylesheet" href="navegador-estilos.css">
         <link rel="stylesheet" href="cuerpo-estilos.css">
@@ -17,31 +18,35 @@
     />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light ml-auto" id="nav-bar">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <button class="btn btn-outline my-2 my-sm-0 ml-auto" id="boton-say-hello" type="submit">Contact me</button>
-            </div>        
-        </nav>
+        <div id="overlay" style="display: none;"> </div>
+     <nav class="navbar navbar-expand-lg navbar-light ml-auto" id="nav-bar">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <button class="btn btn-outline my-2 my-sm-0 ml-auto" id="boton-say-hello" type="button">Contact me</button>
+    </div>        
+</nav>
     <form id="contactForm" class="contact-form e2e-site-contact-form" style="display: none;">
         <div class="form-input">
-          <label for="field1">Name *</label>
-          <input type="text" name="field1" data-validate="required,Generic" placeholder="Your Name..." required="">
+          <label for="field1">Name*</label>
+          <input type="text" name="field1" data-validate="required,Generic" placeholder="Your Name" required="">
         </div>
     
         <div class="form-input">
-          <label for="email">Email Address *</label>
-          <input type="text" name="email" data-validate="required,Email,required" placeholder="Your Email Address..." required="">
+          <label for="email">Email Address*</label>
+          <input type="text" name="email" data-validate="required,Email,required" placeholder="Your Email Address" required="">
         </div>
     
         <div class="form-input">
-          <label for="field2">Message *</label>
-          <textarea name="field2" data-validate="required,Generic" placeholder="Your Message..." required=""></textarea>
+          <label for="field2">Message*</label>
+          <textarea name="field2" data-validate="required,Generic" placeholder="Your Message" required=""></textarea>
         </div>
     
-        <div class="js-submit submit-button" data-id="m65749e5ba5bbc24e67904e7910a297c0ad3803139a75caaac64c6"><span class="js-submit-text submit-text preserve-whitespace">Submit</span></div>
+        <div class="js-submit submit-button">
+            <button class="btn btn-outline my-2 my-sm-0 ml-auto" id="boton-formulario" type="button">Submit</button>
+         </div>
+
       </form>
     
     <div class="floating-button">
@@ -67,55 +72,62 @@
         <section class="seccion1">
         
             <div class="div-dentro-seccion1"> 
-            <h1>BACKEND DEVELOPER & SOFWARE ENGINEER</h1>
-            <h2>I'm Jonathan Scherman</h2>
+            <h1 class="animate__animated animate__zoomInLeft">BACKEND DEVELOPER & SOFWARE ENGINEER</h1>
+            <h2 class="animate__animated animate__fadeInDown">I'm Jonathan Scherman</h2>
         </div>
             <img src="imagenes/JONY3.png" id="jony-foto">
         </section>
         <section class="seccion2">
+
             <div class="container my-8" id="carta-animada">
                 <div class="row justify-content-center" id="contenedor-seccion2">
                     <div class="col-12 col-lg-8 text-center mb-7">
-                        <h6>Hi, I'm going to tell you a little bit about myself</h6>
+                        <h6 data-aos="zoom-in-right">Hi, I'm going to tell you a little bit about myself</h6>
                         <p class="descripcion">I started my career when I finished my studies at school. <br>
                             Since then I have focused on training and getting the best out of me in what I am passionate about.
                             <br>I am responsible, committed and perseverant.
                         </p>
                     </div>
-                    <div class="row row-cols-1 row-cols-md-2">
-                        <div class="col mb-4" >
-                            <div class="card h-100" id="carta1-estudios">
-                                <img src="iconos/ort.jpg.png" id="logo-ort" alt="Technical Bachelor with Orientation in Informatics and Digital Media" class="card-img-top mx-auto d-block">
-                                <div class="card-body">
-                                    <h5 class="card-title"> <strong> </strong>Technical Bachelor with Orientation in Informatics and Digital Media</h5>
-                                    <p class="card-text">I finished in <span class="numero"> 2013</span> at ORT, Argentina.</p>
+                    <div data-aos="fade-down"   data-aos-delay="200">
+                    <div class="container-fluid">
+                        <div class="row gx-3 gy-3">
+                            <div class="col mb-4">
+                                <div class="card h-100" id="carta1-estudios">
+                                    <img src="iconos/ort.jpg.png" id="logo-ort" alt="Technical Bachelor with Orientation in Informatics and Digital Media" class="card-img-top mx-auto d-block">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> <strong> </strong>Technical Bachelor with Orientation in Informatics and Digital Media</h5>
+                                        <p class="card-text">I finished in <span class="numero"> 2013</span> at ORT, Argentina.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col mb-4">
-                            <div class="card h-100" id="carta2-estudios">
-                                <img src="iconos/uba.png" id="logo-uba" alt="Bachelor's + Master's in Computer Science" class="card-img-top mx-auto d-block">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bachelor's + Master's in Computer Science</h5>
-                                    <p class="card-text">Currently working on my final NLP/Speech based thesis which is about labeling transitions in human-human conversations.
-                                        <br> <br> In progress at UBA, Argentina.
-                                    </p>
+                            <div class="col mb-4">
+                                <div class="card h-100" id="carta2-estudios">
+                                    <img src="iconos/uba.png" id="logo-uba" alt="Bachelor's + Master's in Computer Science" class="card-img-top mx-auto d-block">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bachelor's + Master's in Computer Science</h5>
+                                        <p class="card-text">Currently working on my final NLP/Speech based thesis which is about labeling transitions in human-human conversations.
+                                            <br> <br> In progress at UBA, Argentina.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
+        </div>
         </section>
 
 
         <section class="seccion3 container">
-            <h6 id="titulo1-seccion3" class="animate__animated">About my skills</h6>
+            <h6 id="titulo1-seccion3" class="animate__animated" data-aos="zoom-in-right">About my skills</h6>
             <br>
         
-            <div id="skills-container">
-                <div class="row justify-content-center mt-12">
-                    <div class="col-md-3 mb-4 d-flex justify-content-center" id="box1">
+            <div id="skills-container">                        
+
+                <div class="row justify-content-center mt-12" >
+                    <div class="col-md-3 mb-4 d-flex justify-content-center" id="box1" data-aos="flip-up">
                         <div class="content-box__cyYyk p-6 h-100 text-center text-lg-start">
                             <div class="icon-container__zQtPS mb-2 mx-auto ms-lg-0" id="icono-skill">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-calendar2-check  img-fluid" viewBox="0 0 16 16">
@@ -128,7 +140,7 @@
                             <p class="text-muted mb-0"> <span>&#10003;</span> Planning and scheduling <br><span>&#10003;</span> Priorization <br> <span>&#10003;</span> Information management <br> <span>&#10003;</span> Problem solving</p>
                         </div>
                     </div>                    
-                    <div class="col-md-3 mb-4 d-flex justify-content-center" id="box2">
+                    <div class="col-md-3 mb-4 d-flex justify-content-center" id="box2" data-aos="flip-up">
                         <div class="content-box__cyYyk p-6 h-100 text-center text-lg-start">
                             <div class="icon-container__zQtPS mb-2 mx-auto ms-lg-0" id="icono-skill">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-globe-americas img-fluid" viewBox="0 0 16 16" >
@@ -140,7 +152,7 @@
                             <p class="text-muted mb-0"><strong> Spanish: </strong> Native <br> <strong> English: </strong>Business fluent</p>
                         </div>                   
                      </div>
-                    <div class="col-md-3 mb-4 d-flex justify-content-center" id="box3">
+                    <div class="col-md-3 mb-4 d-flex justify-content-center" id="box3" data-aos="flip-up">
                         <div class="GpCardRows_content-box__cyYyk p-6 h-100 text-center text-lg-start">
                             <div class="GpCardRows_icon-container__zQtPS mb-2 mx-auto ms-lg-0" id="icono-skill">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people-fill  img-fluid" viewBox="0 0 16 16">
@@ -156,7 +168,7 @@
 
                 <h6 id="titulo2-seccion3" class="animate__animated">And all my knowledge</h6>
                 <br>
-                <div class="row justify-content-center mt-12" id="texto-conocimientos">
+                <div class="row justify-content-center mt-12" id="texto-conocimientos" data-aos="zoom-in">
                     <div class="col-md-3 mb-4 d-flex justify-content-center" id="box1-conocimientos">
                         <div class="content-box__cyYyk p-6 h-100 text-center text-lg-start">
                             <div class="icon-container__zQtPS mb-2 mx-auto ms-lg-0">
@@ -221,11 +233,16 @@
         </section>
 
         <section class="seccion4">
-            <h6 class="titulo-seccion4">More than <span class="span-titulo">8</span> years of experience <br> in Backend Development</h6>
-            <div class="container" id="contenedor-seccion4">
+            <h6 class="titulo-seccion4"  data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="100"
+            data-aos-offset="0">More than <span class="span-titulo">8</span> years of experience <br> in Backend Development</h6>
+            <div class="container " id="contenedor-seccion4">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="carta-experiencia">
+                        <div class="carta-experiencia"data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <div class="header">
                                 Feb 2014 - Feb 2016
                             </div>
@@ -237,7 +254,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="carta-experiencia">
+                        <div class="carta-experiencia" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <div class="header">
                                 Sep 2018 - Ago 2021                    
                             </div>
@@ -249,7 +268,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="carta-experiencia">
+                        <div class="carta-experiencia" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <div class="header">
                                 Ago 2021 - Recently                        
                             </div>
@@ -305,10 +326,10 @@
         </footer>
         <script src="archivo.js" type="module"></script>
         <script src="botonnavegador.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

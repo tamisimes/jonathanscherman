@@ -75,4 +75,29 @@
     }
 
 
+    @media only screen and (max-width: 745px) and (min-width: 280px) {
+        .row.gx-3.gy-3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row.gx-3.gy-3 .col {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
 
+        h6 {
+            font-size: 180%;
+        }
+
+    #skills-container {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    #contenedor-seccion4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    
