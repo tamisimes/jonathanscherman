@@ -39,6 +39,7 @@
     h6 {
         font-size: 150%;
     }
+    
     }
     
 @media only screen and (max-width: 650px)  and (min-width:420px) {
@@ -86,8 +87,16 @@
         }
 
         h6 {
-            font-size: 180%;
+            font-size: 140%;
+    
         }
+
+        .descripcion {
+            font-size: 100%;
+        }
+    p{
+        font-size: 90%;
+    }
 
     #skills-container {
         padding-left: 6%;
@@ -99,5 +108,11 @@
         justify-content: center;
         align-items: center;
     }
+    #titulo1-seccion3 , #titulo2-seccion3{
+        font-size: 140%;
+        margin-top: 5%;
+    }
+
+
     }
     
